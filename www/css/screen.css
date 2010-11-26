@@ -1,0 +1,137 @@
+body { 
+ background:#f8f8f8;
+ font:13px Trebuchet MS, Arial, Helvetica, Sans-Serif;
+ color:#333;
+ line-height:160%;
+ margin:0;
+ padding:0;
+ text-align:center;
+}
+
+h1 {
+ font-size:200%;
+ font-weight:normal;
+}
+
+h2, h3, h4, h5, h6 {
+ font-weight:normal;
+ margin:1em 0;
+}
+
+h2 {            
+ font-size:160%;
+}
+
+h3 {          
+ font-size:140%;
+}
+
+h4 {          
+ font-size:120%;
+}
+
+a {
+ text-decoration:none;
+ color:#f30;
+}
+
+a:hover {
+ color:#999;
+}
+
+table, input, textarea, select, li {
+ font:100% Trebuchet MS, Arial, Helvetica, Sans-Serif;
+ line-height:160%;
+ color:#333;
+}
+
+p, blockquote, ul, ol, form {
+ margin:1em 0;
+}
+
+blockquote {
+}
+
+img {
+ border:none;
+}
+
+hr {
+ display:none;
+}
+
+table {
+ margin:1em 0;
+ width:100%;
+ border-collapse:collapse;
+}
+
+th, td {	
+ padding:2px 5px;
+}
+
+th {	
+ text-align:left;
+}
+
+li {
+ display:list-item;
+}
+	
+#container {
+ margin:0 auto;
+ background:#fff;
+ width:600px;
+ padding:20px 40px;
+ text-align:left;
+}
+
+.pform {
+ margin:1em 0;
+ padding-top:10px;
+ background:url(../images/pform/form_top.gif) no-repeat 0 0;
+}
+
+.pform fieldset {
+ margin:0;
+ padding:0;
+ border:none;	
+ float:left;
+ display:inline;
+ width:260px;
+ margin-left:25px;
+}
+
+.pform legend { display:none; }	
+.pform p { margin:.5em 0; }
+.pform label { display:block; }	
+.pform input, .pform textarea {		
+ width:252px;
+ border:1px solid #ddd;
+ background:#fff url(../images/pform/form_input.gif) repeat-x;
+ padding:3px;
+}
+
+.pform textarea {
+ height:125px;
+ overflow:auto;
+}
+
+.pform p.submit {
+ clear:both;
+ background:url(../images/pform/form_bottom.gif) no-repeat 0 100%;
+ padding:0 25px 20px 25px;
+ margin:0;
+ text-align:right;
+}
+
+.pform button {
+ width:150px;
+ height:37px;
+ line-height:37px;		
+ border:none;
+ background:url(../images/pform/form_button.gif) no-repeat 0 0;
+ color:#fff;
+ cursor:pointer;
+ text-align:center;
+}
