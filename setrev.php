@@ -8,7 +8,7 @@ if($_SERVER['REMOTE_ADDR']=='127.0.0.1'):
 		apc_store($key,$rev);
 
 		// Send a deploy notice if this is a production push
-		if(gethostname()=='one_of_yours_hosts.example.com' && $_ENV["SERVER_NAME"]=='www.example.com') {
+		if(gethostname()=='one_of_your_hosts.example.com' && $_ENV["SERVER_NAME"]=='www.example.com') {
 			$ts = date("M.j Y H:i:s");
 			mail('dev@wepay.com','Deploy Notice',"$ts: {$_GET['user']} pushed revision {$_GET['rel']} to production version {$_GET['rev']}\n","From: {$_GET['user']}@example.com\r\nContent-type: text/plain; charset=utf-8\r\n");
 		}
