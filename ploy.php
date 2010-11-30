@@ -310,8 +310,8 @@ EOB;
 			$host = new Host($ip, $targ, $this->log, $pwd);
 			$targ['ssh'][$ip] = $host;
 			$host->exec("mkdir -p {$targ['deploy_to']}/releases");
-			if($target=='dev') $host->sftp("$dir.tar.gz", "{$targ['deploy_to']}/releases/$dir.tar.gz");
-			else $host->scp("$dir.tar.gz", "{$targ['deploy_to']}/releases/$dir.tar.gz");
+			// Alternatively you can use $host->sftp() here
+			$host->scp("$dir.tar.gz", "{$targ['deploy_to']}/releases/$dir.tar.gz");
 			$this->log->progress += $each_progress;
 			$this->log->rollback_add("rm -f {$targ['deploy_to']}/releases/$dir.tar.gz", $ip);
 			// Make sure the file got there uncorrupted
