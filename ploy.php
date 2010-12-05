@@ -212,11 +212,7 @@ EOB;
 		if(isset($options['config'])) $this->ini_file = $options['config'];
 		else if($tmp = getenv('PLOYINI')) $this->ini_file = $tmp;
 		if(!is_readable($this->ini_file)) {
-			if(is_readable('/home/sites/wepay.com/current/deploy/ploy/ploy.ini')) {
-				$this->ini_file = '/home/sites/wepay.com/current/deploy/ploy/ploy.ini';
-			} else {
-				$this->log->error("Unable to load Ploy configuration from {$this->ini_file}. Also tried /home/sites/wepay.com/current/deploy/ploy/ploy.ini");
-			}
+			$this->log->error("Unable to load Ploy configuration from {$this->ini_file}.");
 		}
 		if(isset($options['u'])) $this->user = $options['u'];
 		else if(isset($options['user'])) $this->user = $options['user'];
